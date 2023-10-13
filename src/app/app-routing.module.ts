@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LayoutComponent } from './layout/layout.component';
-import { HomeComponent } from './pages/home/home.component';
+import { MainContainerComponent } from '@arvis/layout/containers';
+import { HomeComponent } from '@arvis/web/pages';
 
 const routes: Routes = [
   {
     path: '',
-    component: LayoutComponent,
+    component: MainContainerComponent,
     children: [
       {
         path: '',

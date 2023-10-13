@@ -2,6 +2,21 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@arvis/*": [
+        "app/*"
+      ],
+      "@arvis/env/*": [
+        "environments/*"
+      ],
+      "@arvis/shared/*": [
+        "app/shared/*"
+      ],
+      "@arvis/core/*": [
+        "app/core/*"
+      ]
+    },
     "outDir": "./out-tsc/app",
     "types": []
   },

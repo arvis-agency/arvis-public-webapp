@@ -2,7 +2,21 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
+    "paths": {
+      "@arvis/*": [
+        "app/*"
+      ],
+      "@arvis/env/*": [
+        "environments/*"
+      ],
+      "@arvis/shared/*": [
+        "app/shared/*"
+      ],
+      "@arvis/core/*": [
+        "app/core/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
