@@ -9,5 +9,19 @@
 </head>
 <body>
   <app-root></app-root>
+
+  <script>
+    window.onscroll = function () {
+      const header_container = document.getElementById("header_container");
+      const sticky = header_container.offsetTop;
+      if (window.pageYOffset > sticky) {
+        header_container.classList.remove('absolute', 'bg-transparent');
+        header_container.classList.add('fixed', 'bg-gray-700');
+      } else {
+        header_container.classList.remove('fixed', 'bg-gray-700');
+        header_container.classList.add('absolute', 'bg-transparent');
+      }
+    };
+  </script>
 </body>
 </html>
